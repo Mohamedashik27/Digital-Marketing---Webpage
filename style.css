@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Urbanist", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-btn{
+    padding: 12px 18px;
+    background-color: #A8FF35;
+    color: #000000;
+    border-radius: 30px;
+}
+
+.my-btn-outline{
+    padding: 12px 18px;
+    background-color: transparent;
+    color: #A8FF35;
+    border-radius: 30px;
+    border: 1px solid #A8FF35;
+}
+
+
+/* bg banner color */
+
+main{
+    background: url("./images/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* banner */
+.banner{
+    padding: 185px 0px;
+}
+
+.banner h1{
+    font-size: 45px;
+   font-weight: 500;
+   background: -webkit-linear-gradient(0deg,#ffffff, #333);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   display: inline-block;
+}
+
+.banner p{
+    color: #ffffff;
+}
+
+/* subscriber */
+
+.subscriber{
+    padding: 100px 0px;
+}
+
+.subscriber .my-btn{
+    display: inline-block;
+}
+
+.subscriber-box{
+    padding: 50px 0px;
+    position: relative;
+}
+
+.subscriber-box h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.line{
+    position: absolute;
+    top: 65px;
+    right: -25px;
+
+}
+
+/* partner */
+
+.partner{
+    padding: 100px 0px;
+}
+
+.partner h2{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.partner-mb{
+    margin-bottom: 70px;
+}
+
+.partner-box{
+    padding: 70px 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+    transition: all .30;
+}
+
+.partner-box p{
+    line-height: 35PX;
+}
+
+.partner-box:hover{
+    background-color: #A8FF35;
+    border: 1px solid #333;
+}
+
+/* brand */
+
+.brand{
+    padding: 100px 0px;
+    border-top: 1px solid #d0d0d0;
+    border-top: 1px solid #d0d0d0;
+}
+
+/* footer */
+
+footer{
+    padding: 100px 0px;
+    color: #ffffff;
+    background: url(./images/bg.png) no-repeat center;
+    background-size: cover;
+}
+
+footer h2{
+    font-size: 60px;
+    position: relative;
+}
+
+footer h2::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 60%;
+    height: 2px;
+    background-color: #ffffff;
+
+}
+
+footer h5{
+    margin-bottom: 30px;
+}
+
+footer p{
+    margin-bottom: 50px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 20px;
+}
+
+footer ul li i{
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+
+
+/* responsive */
+
+@media only screen and (min-width: 800px) {
+
+    .subscriber h2{
+        font-size: 80px;
+    }
+  }
+
+@media only screen and (min-width: 1200px) {
+
+    .banner{
+        padding: 185px 0px;
+    }
+
+    .banner h1{
+        font-size: 64px;
+    }
+
+    .subscriber h2{
+        font-size: 128px;
+    }
+
+    .partner h2{
+        font-size: 40px;
+    }
+
+    footer h2{
+        font-size: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 998px) {
+
+    .line{
+        display: none;
+    }
+  }
